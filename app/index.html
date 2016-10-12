@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>exercisesinstyle</title>
+    <title>Exercises in Style / 5 NOV 2016 - 4PM</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -26,16 +28,19 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-        <li>Modernizr</li>
-        <li>jQuery</li>
-      </ul>
+    <div id="screen">
+      <div class="refresh-bg" id="cam" data-cam="http://50.250.214.212/cgi-bin/camera?resolution=640&amp;amp;quality=1&amp;amp;Language=0&amp;amp;0">
+        <img id="nextframe" />
+      </div>
+      <div id="content">
+        <p>
+          Exercises in Style /<br>
+          5 NOV 2016 - 4PM<br>
+          STORFRONTLAB<br>
+          Enar de Dios Rodríguez &amp;<br>
+          Ana María Montenegro
+        </p>
+      </div>
     </div>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -50,6 +55,7 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     

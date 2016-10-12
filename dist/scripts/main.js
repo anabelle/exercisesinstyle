@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){function e(){console.log("refreshing",r);var e=n+"timed="+r;$("#nextframe").attr("src",e),$("#nextframe").on("load",function(){$(".refresh-bg").css("background-image","url("+e+")"),r+=1})}if($(".refresh-bg").length>0){var r=0,n=$(".refresh-bg").data("cam");setInterval(function(){e()},1e3);console.log("interval set",n)}});
