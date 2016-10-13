@@ -36,7 +36,7 @@
     <![endif]-->
     <div id="screen">
       <div class="refresh-interlace" id="cam" data-cam="http://50.250.214.212/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;0">
-        <img class="frame" id="frame-odd" />
+        <img class="frame active" id="frame-odd" />
         <img class="frame" id="frame-even" />
       </div>
       <div id="content">
@@ -68,6 +68,7 @@
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
+    <script src="scripts/plugins.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>

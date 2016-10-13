@@ -6,9 +6,11 @@ $( document ).ready(function() {
 	}
 
 	if( $('.refresh-interlace').length > 0 ){
+		var refreshing = false;
 		var refresh_interlace_counter = 0;
 		var bg = $('.refresh-interlace').data('cam');
 		var refresh_interlace_interval = setInterval( function(){ refresh_interlace() }, 1000 );
+		objectFitImages('.frame');
 	}
 
 	function refresh_bg(){
@@ -21,24 +23,25 @@ $( document ).ready(function() {
 	};
 
 	function refresh_interlace(){
-		if( $('#frame-even').is(':visible') ){
-			var evenodd = 'even';
-			var evenoddnew = 'odd';
-		}
-		if( $('#frame-odd').is(':visible') ){
-			var evenodd = 'odd';
-			var evenoddnew = 'even';
-		}
-		evenodd = evenodd || 'even';
-		evenoddnew = evenoddnew || 'odd';
+		if( refreshing == false ){	
+			refreshing = true;
+			if( $('#frame-even').hasClass('active') ){
+				var evenodd = 'even';
+				var evenoddnew = 'odd';
+			}
+			if( $('#frame-odd').hasClass('active') ){
+				var evenodd = 'odd';
+				var evenoddnew = 'even';
+			}
 
-		var new_bg = bg + 'timed=' +refresh_interlace_counter;
-		$('#frame-'+ evenoddnew ).attr( 'src', new_bg );
-		$('#cam').imagesLoaded( function() {
-			$('#frame-'+ evenoddnew ).fadeIn('80', function() {
-				$('#frame-'+ evenodd ).fadeOut('80');
+			var new_bg = bg + 'timed=' + refresh_interlace_counter;
+			// $('.refresh-interlace').css('background-image', 'url(' + bg + ')' );
+			$('#frame-'+ evenoddnew ).attr( 'src', new_bg ).load( function() {
+				$('#frame-'+ evenoddnew ).addClass('active');
+				$('#frame-'+ evenodd ).removeClass('active');
+				refresh_interlace_counter = refresh_interlace_counter + 1;
+				refreshing = false;
 			});
-			refresh_interlace_counter = refresh_interlace_counter + 1;
-		});
+		}
 	}
 });
