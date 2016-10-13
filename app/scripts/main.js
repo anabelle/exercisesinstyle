@@ -35,8 +35,9 @@ $( document ).ready(function() {
 		var new_bg = bg + 'timed=' +refresh_interlace_counter;
 		$('#frame-'+ evenoddnew ).attr( 'src', new_bg );
 		$('#cam').imagesLoaded( function() {
-			$('#frame-'+ evenoddnew ).show();
-			$('#frame-'+ evenodd ).fadeOut('100');
+			$('#frame-'+ evenoddnew ).fadeIn('80', function() {
+				$('#frame-'+ evenodd ).fadeOut('80');
+			});
 			refresh_interlace_counter = refresh_interlace_counter + 1;
 		});
 	}
