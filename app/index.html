@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Exercises in Style / 5 NOV 2016 - 4PM</title>
-    
+
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
@@ -35,8 +35,9 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div id="screen">
-      <div class="refresh-bg" id="cam" data-cam="http://50.250.214.212/cgi-bin/camera?resolution=640&amp;amp;quality=1&amp;amp;Language=0&amp;amp;0">
-        <img id="nextframe" />
+      <div class="refresh-interlace" id="cam" data-cam="http://50.250.214.212/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;0">
+        <img class="frame" id="frame-odd" />
+        <img class="frame" id="frame-even" />
       </div>
       <div id="content">
         <p>
@@ -62,6 +63,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
