@@ -75,7 +75,7 @@ $( document ).ready(function() {
 		console.log('Getting cameras...')
 		$.ajax({
 			dataType: 'json',
-			url: '/scripts/camaras.json',
+			url: '/camaras.json',
 			success: function( data ){
 				camaras = data;
 				console.log( 'Got cameras: ', camaras );
