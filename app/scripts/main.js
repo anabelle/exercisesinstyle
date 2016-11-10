@@ -3,6 +3,7 @@ $( document ).ready(function() {
 	var camara_activa = null;
 	var camara_loaded = null;
 	var camaras = [];
+	var clear_loader = null;
 	var refresh_interlace_counter = 0;
 	var refresh_interlace_interval = null;
 	var refreshing = false;
@@ -111,15 +112,19 @@ $( document ).ready(function() {
 		$('#preloader_img').attr('src', next_cam_url ).load( function() { 
 			console.log('Next camara reported done loading');
 			load_camera( which );
-			setTimeout( function(){ 
+			clear_loader = setTimeout( function(){ 
 				$('#preloader_img').attr('src', '' );
 				$('#preloader').removeClass('loading');
 				console.log('Preloader cleared.');
-			}, 500 );
+			}, 100 );
 		});
 	}
 
 	function load_camera( which ){
+		if( clear_loader != null ){
+			clearTimeout( clear_loader );
+			clear_loader = null;
+		}
 		reset_screen();
 		console.log('Loading camera: ', which );
 		camara_activa = which;
@@ -130,24 +135,23 @@ $( document ).ready(function() {
 		}else{
 			set_zoom(1);			
 		}
+		console.log('Playing camera of type: ', camara_loaded.type );
 		play_camera( camara_loaded.type );
 	}
 
 	function play_camera( type ){
-		console.log('Playing camera of type: ', type );
 		if( type === 'image' ){
-			console.log('Playing camera of type image: ', camara_loaded );
 
 			if( refresh_interlace_interval == null ){
 				console.log('Setting up refresh interval.')
-				refresh_interlace_interval = setInterval( function(){ play_camera('image') }, 500 );
+				refresh_interlace_interval = setInterval( function(){ play_camera('image') }, 33 );
 			}
 
 			bg = camara_loaded.url;
 			if( refreshing == false ){	
 
 				if( !$('#frame-even').hasClass('active') && !$('#frame-odd').hasClass('active') ){
-					console.log('No hay frame activo');
+					console.log('No hay frame activo, iniciando...');
 					$('#frame-even').addClass('active');
 					var evenodd = 'even';
 					var evenoddnew = 'odd';
