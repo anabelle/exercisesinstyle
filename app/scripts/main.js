@@ -210,8 +210,8 @@ $( document ).ready(function() {
 			zoom_level = Math.round(( zoom_level - 0.1) * 1e12) / 1e12;
 		}
 
-		if( zoom_level <  0 ){
-			zoom_level = 0.1;
+		if( zoom_level <  1 ){
+			zoom_level = 1;
 		}
 
 		set_zoom( zoom_level );
