@@ -34,6 +34,11 @@ $( document ).ready(function() {
 		}
 	});
 
+	// Bind Click
+	$('#screen').on( 'click', function(){
+		switch_camera( 'next' );
+	});
+
 	function refresh_bg(){
 		$('#cam').imagesLoaded( function() {
 			$('.refresh-bg').css('background-image', 'url(' + new_bg + ')' );

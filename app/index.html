@@ -35,10 +35,17 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div id="screen">
-      <div class="refresh-interlace" id="cam" data-cam="http://50.250.214.212/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;0">
-        <img class="frame active" id="frame-odd" />
+      <!-- Para camaras que necesitan script de refresh * type: image -->
+      <div class="cam image" id="cam" data-cam="null">
+        <img class="frame" id="frame-odd" />
         <img class="frame" id="frame-even" />
       </div>
+
+      <!-- Para camaras que se auto refrescan con mjpg * type: mjpg -->
+      <div class="cam mjpg" id="cam" data-cam="null">
+        <img class="frame" id="frame-mjpg" />
+      </div>
+      
       <div id="content">
         <p>
           Exercises in Style<br>
