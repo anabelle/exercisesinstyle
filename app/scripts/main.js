@@ -89,6 +89,30 @@ $( document ).ready(function() {
 		});
 	}
 
+	function preload_camera( which ){
+		var next_cam = camaras[ which ];
+		console.log('Preloading camera: ', which );
+		$('#preloader').addClass('loading');
+
+		if( next_cam.type == 'image' ){
+			var next_cam_url = next_cam.url + '?timed=' + refresh_interlace_counter;
+		}
+
+		if( next_cam.type == 'mjpg' ){
+			var next_cam_url = next_cam.url;
+		}
+		
+		$('#preloader_img').attr('src', next_cam_url ).load( function() { 
+			console.log('Next camara reported done loading');
+			load_camera( which );
+			setTimeout( function(){ 
+				$('#preloader_img').attr('src', '' );
+				$('#preloader').removeClass('loading');
+				console.log('Preloader cleared.');
+			}, 500 );
+		});
+	}
+
 	function load_camera( which ){
 		reset_screen();
 		console.log('Loading camera: ', which );
@@ -171,7 +195,7 @@ $( document ).ready(function() {
 				swith_to = 0;
 			}
 			console.log('Loading next camera...', swith_to );
-			load_camera( swith_to );
+			preload_camera( swith_to );
 		}
 
 		if ( prevnext === 'prev' ){
@@ -181,7 +205,7 @@ $( document ).ready(function() {
 				swith_to = cantidad_camaras;
 			}
 			console.log('Loading previous camera...', swith_to );
-			load_camera( swith_to );
+			preload_camera( swith_to );
 		}
 	}
 
