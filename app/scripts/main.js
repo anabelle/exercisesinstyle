@@ -6,7 +6,7 @@ $( document ).ready(function() {
 	var refresh_interlace_counter = 0;
 	var refresh_interlace_interval = null;
 	var refreshing = false;
-	var zoom_level = 0;
+	var zoom_level = 1;
 
 	if( $('.refresh-bg').length > 0 ){
 		var refresh_counter = 0;
@@ -23,13 +23,19 @@ $( document ).ready(function() {
 	}
 
 	// Bind arrow keys
-	$(window).keyup(function (e) {
+	$(window).keydown(function (e) {
 		var key = e.which;
 		if(key == 13 || key == 39) { // the enter key code or right arrow
 			switch_camera( 'next' );
 			return false;  
 		} else if(key == 37) { // left arrow
 			switch_camera( 'prev' );
+			return false;  
+		} else if(key == 38) { // left arrow
+			change_zoom('plus');
+			return false;  
+		} else if(key == 40) { // left arrow
+			change_zoom('minus');
 			return false;  
 		}
 	});
@@ -119,6 +125,11 @@ $( document ).ready(function() {
 		camara_activa = which;
 		camara_loaded = camaras[ which ];
 		console.log('Loaded camera: ', camara_loaded );
+		if( camara_loaded.isZoomed == true ){
+			set_zoom(1.25);
+		}else{
+			set_zoom(1);			
+		}
 		play_camera( camara_loaded.type );
 	}
 
@@ -182,6 +193,28 @@ $( document ).ready(function() {
 		}
 		refresh_interlace_interval = null;
 		refreshing = false;
+	}
+
+	function set_zoom( level ){
+		zoom_level = level;
+		$('.frame').css('transform', 'scale('+ zoom_level +')');
+		console.log('Changed zoom level to: ', zoom_level );
+	}
+
+	function change_zoom( plusminus ){
+		if( plusminus == 'plus' ){
+			zoom_level = Math.round(( zoom_level + 0.1) * 1e12) / 1e12;
+		}
+
+		if( plusminus == 'minus' ){
+			zoom_level = Math.round(( zoom_level - 0.1) * 1e12) / 1e12;
+		}
+
+		if( zoom_level <  0 ){
+			zoom_level = 0.1;
+		}
+
+		set_zoom( zoom_level );
 	}
 
 	function switch_camera( prevnext ){
