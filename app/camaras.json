@@ -274,7 +274,7 @@
   },
   {
     "id": "51",
-    "url": "http://api.surfline.com/v1/cams/4127",
+    "url": "4127", // solo necesitamos el id de la camara, el ultimo segmento de la url
     "url_site": "http://www.surfline.com/surf-report/ocean-beach-sf-northern-california_4127/",
     "type": "surfline",
     "isZoomed": false
