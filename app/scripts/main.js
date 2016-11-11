@@ -1,3 +1,35 @@
+var tag = document.createElement('script');
+var api_ready = false;
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+  var player;
+  function onYouTubeIframeAPIReady() {
+  	console.log( 'Youtube API ready' );
+  	api_ready = true;
+  }
+
+  function onPlayerReady(event) {
+  	$('#frame-youtube').addClass('active');
+  	event.target.mute();
+    event.target.playVideo();
+  }
+
+  var done = false;
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) {
+      switch_camera( 'plus' );
+    }
+    if (event.data == YT.PlayerState.PAUSED) {
+      event.target.playVideo();
+    }
+  }
+  function stopVideo() {
+    player.stopVideo();
+  }
+
 $( document ).ready(function() {
 
 	var camara_activa = null;
@@ -8,6 +40,7 @@ $( document ).ready(function() {
 	var refresh_interlace_interval = null;
 	var refreshing = false;
 	var zoom_level = 1;
+
 
 	if( $('.refresh-bg').length > 0 ){
 		var refresh_counter = 0;
@@ -109,7 +142,7 @@ $( document ).ready(function() {
 			var next_cam_url = next_cam.url;
 		}
 
-		if( next_cam.type == 'surfline' || next_cam.type == 'earthcam' ){
+		if( next_cam.type == 'surfline' || next_cam.type == 'earthcam' | next_cam.type == 'youtube' ){
 			$('#preloader').removeClass('loading');
 			console.log('Preloader cleared.');
 			return load_camera( which );
@@ -211,8 +244,36 @@ $( document ).ready(function() {
 		}else if( type === 'earthcam' ){
 			console.log('Playing camera of type earthcam: ', camara_loaded );
 			play_stream( camara_loaded.url );
+		}else if( type === 'youtube' ){
+			console.log('Playing camera of type youtube: ', camara_loaded );
+			play_youtube();
 		}else{
 			console.log('Camera type not recognized: ', type )
+		}
+	}
+
+	function play_youtube(){
+		if( api_ready ){	
+			window.player = new YT.Player('player', {
+			      height: '576',
+			      width: '720',
+			      videoId: camara_loaded.url,
+			      playerVars: {
+			      	controls: 0,
+			      	disablekb: 1,
+			      	iv_load_policy: 3,
+			      	modestbranding: 1,
+			      	rel: 0,
+			      	showinfo: 0
+			      },
+			      events: {
+			        'onReady': onPlayerReady,
+			        'onStateChange': onPlayerStateChange
+			      }
+			});
+		}else{
+			console.log('Waiting for YouTube API');
+			setTimeout( play_youtube, 100 );
 		}
 	}
 
@@ -235,6 +296,10 @@ $( document ).ready(function() {
 		console.log('Resetting screen...')
 		$('.frame').attr('src', '').removeClass('active');
 		$('.cam').data( 'cam', 'null');
+		if( window.player ){
+			$('#frame-youtube').html('').append('<div id=\'player\'></div>');
+			window.player = null;
+		}
 		if( refresh_interlace_interval != null ){		
 			console.log('Clearing refresh interval.')
 			clearInterval( refresh_interlace_interval );

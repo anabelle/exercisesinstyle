@@ -36,14 +36,26 @@
     <![endif]-->
 
     <div id="screen">
+      <!-- Para camaras desde youtube * type: youtube -->
+      <div class="cam youtube" id="cam-youtube" data-cam="null">
+        <div class="frame" autoplay id="frame-youtube">
+          <div id="player"></div>
+        </div>
+      </div>
+
+      <!-- Para camaras desde hls * type: hls -->
+      <div class="cam hls" id="cam-hls" data-cam="null">
+        <video class="frame" autoplay id="frame-hls"></video>
+      </div>
+
       <!-- Para camaras que necesitan script de refresh * type: image -->
-      <div class="cam image" id="cam" data-cam="null">
+      <div class="cam image" id="cam-image" data-cam="null">
         <img class="frame" id="frame-odd" />
         <img class="frame" id="frame-even" />
       </div>
 
       <!-- Para camaras que se auto refrescan con mjpg * type: mjpg -->
-      <div class="cam mjpg" id="cam" data-cam="null">
+      <div class="cam mjpg" id="cam-mjpg" data-cam="null">
         <img class="frame" id="frame-mjpg" />
       </div>
     </div>

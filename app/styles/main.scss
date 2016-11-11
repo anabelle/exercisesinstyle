@@ -81,6 +81,12 @@ img.failed {
   background: url('/images/fail.png') no-repeat 50% 50%;
 }
 
+iframe#player {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
 .frame {
   object-fit: contain;
   object-position: 50% 50%;
