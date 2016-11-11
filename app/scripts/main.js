@@ -108,6 +108,12 @@ $( document ).ready(function() {
 		if( next_cam.type == 'mjpg' ){
 			var next_cam_url = next_cam.url;
 		}
+
+		if( next_cam.type == 'surfline' ){
+			$('#preloader').removeClass('loading');
+			console.log('Preloader cleared.');
+			return load_camera( which );
+		}
 		
 		$('#preloader_img').attr('src', next_cam_url ).load( function() { 
 			console.log('Next camara reported done loading');
@@ -182,6 +188,23 @@ $( document ).ready(function() {
 			console.log('Playing camera of type mjpg: ', camara_loaded );
 			$('#frame-mjpg').addClass('active').attr('src', camara_loaded.url );
 
+		}else if( type === 'surfline' ){
+			console.log('Playing camera of type surfline: ', camara_loaded );
+			if(Hls.isSupported()) {
+				console.log('hello hls.js!');
+				$('#frame-surfline').addClass('active');
+				var video = document.getElementById('frame-surfline');
+				var hls = new Hls();
+				hls.loadSource('http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8');
+				hls.attachMedia(video);
+				hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+        			console.log('video and hls.js are now bound together !');
+					hls.on(Hls.Events.MANIFEST_PARSED,function() {
+						console.log('manifest loaded, found ' + data.levels.length + ' quality level');
+						video.play();
+					});
+				});
+			}
 		}else{
 			console.log('Camera type not recognized: ', type )
 		}

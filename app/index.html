@@ -36,16 +36,22 @@
     <![endif]-->
     <div id="screen">
 
+      <!-- Para camaras desde surfline * type: surfline -->
+      <div class="cam surfline" id="cam-surfline" data-cam="null">
+        <video class="frame" autoplay id="frame-surfline"></video>
+      </div>
+
       <!-- Para camaras que necesitan script de refresh * type: image -->
-      <div class="cam image" id="cam" data-cam="null">
+      <div class="cam image" id="cam-image" data-cam="null">
         <img class="frame" id="frame-odd" />
         <img class="frame" id="frame-even" />
       </div>
 
       <!-- Para camaras que se auto refrescan con mjpg * type: mjpg -->
-      <div class="cam mjpg" id="cam" data-cam="null">
+      <div class="cam mjpg" id="cam-mjpg" data-cam="null">
         <img class="frame" id="frame-mjpg" />
       </div>
+
 
       <div id="content">
         <p>
