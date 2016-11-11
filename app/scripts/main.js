@@ -109,7 +109,7 @@ $( document ).ready(function() {
 			var next_cam_url = next_cam.url;
 		}
 
-		if( next_cam.type == 'surfline' ){
+		if( next_cam.type == 'surfline' || next_cam.type == 'earthcam' ){
 			$('#preloader').removeClass('loading');
 			console.log('Preloader cleared.');
 			return load_camera( which );
@@ -203,7 +203,7 @@ $( document ).ready(function() {
 				});
 			}
 		}else if( type === 'earthcam' ){
-			console.log('Playing camera of type eartcham: ', camara_loaded );
+			console.log('Playing camera of type earthcam: ', camara_loaded );
 			play_stream( camara_loaded.url );
 		}else{
 			console.log('Camera type not recognized: ', type )
