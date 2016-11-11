@@ -195,7 +195,7 @@ $( document ).ready(function() {
 					dataType: 'json',
 					url: camara_loaded.url,
 					success: function( data ){
-						var stream_url = data.streamInfo.stream["0"].file;
+						var stream_url = data.streamInfo.stream['0'].file;
 						console.log( 'Got stream url: ', stream_url );
 						console.log('Iitializing hls.js!');
 						$('#frame-surfline').addClass('active');
