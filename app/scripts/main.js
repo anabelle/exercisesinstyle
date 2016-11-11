@@ -198,24 +198,31 @@ $( document ).ready(function() {
 						var stream_url = data.streamInfo.stream['0'].file;
 						console.log( 'Got stream url: ', stream_url );
 						console.log('Iitializing hls.js!');
-						$('#frame-surfline').addClass('active');
-						var video = document.getElementById('frame-surfline');
-						var hls = new Hls();
-						hls.loadSource( stream_url );
-						hls.attachMedia(video);
-						hls.on(Hls.Events.MEDIA_ATTACHED, function () {
-		        			console.log('video and hls.js are now bound together.');
-							hls.on(Hls.Events.MANIFEST_PARSED,function() {
-								console.log('video manifest loaded, found ' + data.levels.length + ' quality level');
-								video.play();
-							});
-						});
+						play_stream( stream_url ); 
 					}
 				});
 			}
+		}else if( type === 'earthcam' ){
+			console.log('Playing camera of type eartcham: ', camara_loaded );
+			play_stream( camara_loaded.url );
 		}else{
 			console.log('Camera type not recognized: ', type )
 		}
+	}
+
+	function play_stream( stream_url ){
+		$('#frame-hls').addClass('active');
+		var video = document.getElementById('frame-hls');
+		var hls = new Hls();
+		hls.loadSource( stream_url );
+		hls.attachMedia(video);
+		hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+			console.log('video and hls.js are now bound together.');
+			hls.on(Hls.Events.MANIFEST_PARSED,function() {
+				console.log('video manifest loaded, found ' + data.levels.length + ' quality level');
+				video.play();
+			});
+		});
 	}
 
 	function reset_screen(){

@@ -278,5 +278,40 @@
     "url_site": "http://www.surfline.com/surf-report/ocean-beach-sf-northern-california_4127/",
     "type": "surfline",
     "isZoomed": false
+  },
+  {
+    "id": "35",
+    "url": "http://75.149.45.190/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/237543/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "51",
+    "url": "4127",
+    "url_site": "http://www.surfline.com/surf-report/ocean-beach-sf-northern-california_4127/",
+    "type": "surfline",
+    "isZoomed": false
+  },
+  {
+    "id": "18",
+    "url": "http://208.106.16.91:8001/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/240175/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "51",
+    "url": "4127",
+    "url_site": "http://www.surfline.com/surf-report/ocean-beach-sf-northern-california_4127/",
+    "type": "surfline",
+    "isZoomed": false
+  },
+  {
+    "id": "50",
+    "url": "http://video3.earthcam.com/fecnetwork/6961.flv/.m3u8",
+    "url_site": "http://www.earthcam.com/usa/california/sanfrancisco/?cam=sanfranciscoskyline",
+    "type": "earthcam",
+    "isZoomed": false
   }
 ]
