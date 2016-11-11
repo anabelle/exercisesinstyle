@@ -191,18 +191,26 @@ $( document ).ready(function() {
 		}else if( type === 'surfline' ){
 			console.log('Playing camera of type surfline: ', camara_loaded );
 			if(Hls.isSupported()) {
-				console.log('hello hls.js!');
-				$('#frame-surfline').addClass('active');
-				var video = document.getElementById('frame-surfline');
-				var hls = new Hls();
-				hls.loadSource('http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8');
-				hls.attachMedia(video);
-				hls.on(Hls.Events.MEDIA_ATTACHED, function () {
-        			console.log('video and hls.js are now bound together !');
-					hls.on(Hls.Events.MANIFEST_PARSED,function() {
-						console.log('manifest loaded, found ' + data.levels.length + ' quality level');
-						video.play();
-					});
+				$.ajax({
+					dataType: 'json',
+					url: camara_loaded.url,
+					success: function( data ){
+						var stream_url = data.streamInfo.stream["0"].file;
+						console.log( 'Got stream url: ', stream_url );
+						console.log('Iitializing hls.js!');
+						$('#frame-surfline').addClass('active');
+						var video = document.getElementById('frame-surfline');
+						var hls = new Hls();
+						hls.loadSource( stream_url );
+						hls.attachMedia(video);
+						hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+		        			console.log('video and hls.js are now bound together.');
+							hls.on(Hls.Events.MANIFEST_PARSED,function() {
+								console.log('video manifest loaded, found ' + data.levels.length + ' quality level');
+								video.play();
+							});
+						});
+					}
 				});
 			}
 		}else{
