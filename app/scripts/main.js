@@ -114,15 +114,21 @@ $( document ).ready(function() {
 			console.log('Preloader cleared.');
 			return load_camera( which );
 		}
-		
-		$('#preloader_img').attr('src', next_cam_url ).load( function() { 
+		var img = $('#preloader_img');
+		img.attr('src', next_cam_url ).error(function() {
+			console.log('Next camara reported error loading');
+			img.attr('src', '/images/fail.png' );
+			$('.frame').addClass('failed');
+			// $(this).unbind("load");
+		}).load( function() { 
 			console.log('Next camara reported done loading');
 			load_camera( which );
 			clear_loader = setTimeout( function(){ 
-				$('#preloader_img').attr('src', '' );
+				img.attr('src', '' );
 				$('#preloader').removeClass('loading');
 				console.log('Preloader cleared.');
 			}, 100 );
+			$(this).unbind('error');
 		});
 	}
 
@@ -262,6 +268,8 @@ $( document ).ready(function() {
 	function switch_camera( prevnext ){
 		var cantidad_camaras = camaras.length - 1;
 		var swith_to = null;
+
+		$('.failed').removeClass('failed');
 
 		if( prevnext === 'next' ){
 			swith_to = camara_activa+1;

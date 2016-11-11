@@ -77,6 +77,10 @@ img {
   padding: 0.2em 0;
 }
 
+img.failed {
+  background: url('/images/fail.png') no-repeat 50% 50%;
+}
+
 .frame {
   object-fit: contain;
   object-position: 50% 50%;
