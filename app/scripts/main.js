@@ -366,6 +366,6 @@ $( document ).ready(function() {
 	if( $('body').hasClass('movie') ){
 		init_movie();
 	}else{
-		get_cameras( load_camera , 18 );
+		get_cameras( load_camera , 17 );
 	}
 });
