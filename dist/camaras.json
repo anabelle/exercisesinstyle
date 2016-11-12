@@ -49,9 +49,9 @@
     "isZoomed": false
   },
   {
-    "id": "43",
-    "url": "http://67.117.41.137/img/video.mjpeg",
-    "url_site": "http://www.insecam.org/en/view/35525/",
+    "id": "70",
+    "url": "http://108.95.165.203:80/snap.jpg?JpegSize=M&amp;JpegCam=1&amp;r=COUNTER",
+    "url_site": "http://www.insecam.org/en/view/360737/",
     "type": "mjpg",
     "isZoomed": false
   },
@@ -175,9 +175,9 @@
     "isZoomed": true
   },
   {
-    "id": "43",
-    "url": "http://67.117.41.137/img/video.mjpeg",
-    "url_site": "http://www.insecam.org/en/view/35525/",
+    "id": "70",
+    "url": "http://108.95.165.203:80/snap.jpg?JpegSize=M&amp;JpegCam=1&amp;r=COUNTER",
+    "url_site": "http://www.insecam.org/en/view/360737/",
     "type": "mjpg",
     "isZoomed": false
   },
@@ -315,9 +315,9 @@
     "isZoomed": false
   },
   {
-    "id": "42",
-    "url": "http://67.117.41.138/img/video.mjpeg",
-    "url_site": "http://www.insecam.org/en/view/35556/",
+    "id": "70",
+    "url": "http://108.95.165.203:80/snap.jpg?JpegSize=M&amp;JpegCam=1&amp;r=COUNTER",
+    "url_site": "http://www.insecam.org/en/view/360737/",
     "type": "mjpg",
     "isZoomed": false
   },
