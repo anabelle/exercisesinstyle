@@ -266,9 +266,9 @@
     "isZoomed": false
   },
   {
-    "id": "62",
-    "url": "http://173.164.213.201:8090/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478744212",
-    "url_site": "http://www.insecam.org/en/view/261767/",
+    "id": "68",
+    "url": "http://74.95.6.193:8001/mjpg/video.mjpg?COUNTER",
+    "url_site": "http://www.insecam.org/en/view/237502/",
     "type": "image",
     "isZoomed": true
   },
@@ -329,18 +329,11 @@
     "isZoomed": true
   },
   {
-    "id": "16",
-    "url": "http://172.3.188.67:83/IMAGE.JPG",
-    "url_site": "http://www.insecam.org/en/view/226159/",
+    "id": "67"
+    "url": "http://108.78.254.124:8083/cgi-bin/faststream.jpg?stream=half&amp;fps=15&amp;rand=COUNTER",
+    "url_site": "http://www.insecam.org/en/view/354533/",
     "type": "image",
-    "isZoomed": false
-  },
-  {
-    "id": "17",
-    "url": "http://172.3.188.67:82/IMAGE.JPG",
-    "url_site": "http://www.insecam.org/en/view/221929/",
-    "type": "image",
-    "isZoomed": false
+    "isZoomed": true
   },
   {
     "id": "22",
