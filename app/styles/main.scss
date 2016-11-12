@@ -43,6 +43,18 @@ img {
   z-index: 10;
 }
 
+.movie #content {
+  bottom: 60px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+
+  h1 {
+    font-weight: normal;
+    line-height: 0.9em;
+  }
+}
+
 #preloader {
   position: absolute;
   z-index: 1000;

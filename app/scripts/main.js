@@ -20,7 +20,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   var done = false;
   function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.ENDED) {
-      switch_camera( 'plus' );
+      switch_camera( 'next' );
     }
     if (event.data == YT.PlayerState.PAUSED) {
       event.target.playVideo();
@@ -56,28 +56,6 @@ $( document ).ready(function() {
 		objectFitImages('.frame');
 	}
 
-	// Bind arrow keys
-	$(window).keydown(function (e) {
-		var key = e.which;
-		if(key == 13 || key == 39) { // the enter key code or right arrow
-			switch_camera( 'next' );
-			return false;  
-		} else if(key == 37) { // left arrow
-			switch_camera( 'prev' );
-			return false;  
-		} else if(key == 38) { // left arrow
-			change_zoom('plus');
-			return false;  
-		} else if(key == 40) { // left arrow
-			change_zoom('minus');
-			return false;  
-		}
-	});
-
-	// Bind Click
-	$('#screen').on( 'click', function(){
-		switch_camera( 'next' );
-	});
 
 	function refresh_bg(){
 		$('#cam').imagesLoaded( function() {
@@ -113,6 +91,28 @@ $( document ).ready(function() {
 
 	function init_movie(){
 		console.log( 'Initializing movie...' );
+		// Bind arrow keys
+		$(window).keydown(function (e) {
+			var key = e.which;
+			if(key == 13 || key == 39) { // the enter key code or right arrow
+				switch_camera( 'next' );
+				return false;  
+			} else if(key == 37) { // left arrow
+				switch_camera( 'prev' );
+				return false;  
+			} else if(key == 38) { // left arrow
+				change_zoom('plus');
+				return false;  
+			} else if(key == 40) { // left arrow
+				change_zoom('minus');
+				return false;  
+			}
+		});
+
+		// Bind Click
+		$('#screen').on( 'click', function(){
+			switch_camera( 'next' );
+		});
 		get_cameras( load_camera , 0 );
 	}
 
@@ -334,6 +334,13 @@ $( document ).ready(function() {
 		var cantidad_camaras = camaras.length - 1;
 		var swith_to = null;
 
+		if( $('#content').length > 0 ){
+			$('#content').fadeOut('slow', function() {
+				$('#content').remove();
+			});
+			return false;
+		}
+
 		$('.failed').removeClass('failed');
 
 		if( prevnext === 'next' ){
@@ -356,6 +363,9 @@ $( document ).ready(function() {
 			preload_camera( swith_to );
 		}
 	}
-
-	init_movie();
+	if( $('body').hasClass('movie') ){
+		init_movie();
+	}else{
+		get_cameras( load_camera , 17 );
+	}
 });
