@@ -41,7 +41,7 @@ script:
     - gulp
 after_success:
     # Any command that using GH_OAUTH_TOKEN must pipe the output to /dev/null to not expose your oauth token
-    - git add -f .
+    - git add .
     - git config user.email "github@huellaspyp.com"
     - git config user.name "Anabelle Handdoek"
     - git commit -am "New CI version [ci skip]"
