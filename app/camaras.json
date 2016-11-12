@@ -16,7 +16,8 @@
   {
     "id": "67",
     "url": "http://50.250.214.213/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478714361",
-    "url_site": "http://www.insecam.org/en/view/261522/",
+    "url_site": "http://www.insecam.org/en/view/
+    1522/",
     "type": "image",
     "isZoomed": true
   },
@@ -37,7 +38,8 @@
   {
     "id": "62",
     "url": "http://173.164.213.201:8090/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478744212",
-    "url_site": "http://www.insecam.org/en/view/261767/",
+    "url_site": "http://www.insecam.org/en/view/
+    1767/",
     "type": "image",
     "isZoomed": true
   },
@@ -189,11 +191,11 @@
     "isZoomed": false
   },
   {
-    "id": "26",
-    "url": "http://50.250.214.215/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;0",
-    "url_site": "http://www.insecam.org/en/view/261474/",
+    "id": "25",
+    "url": "http://50.250.214.212/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478745220",
+    "url_site": "http://www.insecam.org/en/view/265660/",
     "type": "image",
-    "isZoomed": true
+    "isZoomed": false
   },
   {
     "id": "41",
