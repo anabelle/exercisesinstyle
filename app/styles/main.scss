@@ -34,19 +34,29 @@ img {
 }
 
 #content {
-  bottom: 0;
+  bottom: 60px;
   color: #fff;
   font-size: 1.3em;
   padding: 0em 0.8em 0em ;
   position: absolute;
+  text-align: center;
   text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.6);
   z-index: 10;
+  width: 100%;
+
+  a, 
+  a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .movie #content {
   bottom: 60px;
-  text-align: center;
-  width: 100%;
   box-sizing: border-box;
 
   h1 {
@@ -115,6 +125,10 @@ iframe#player {
     opacity: 1;
     z-index: 5;
   }
+}
+
+.home .frame {
+  object-fit: cover;
 }
 
 
