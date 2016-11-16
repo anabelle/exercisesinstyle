@@ -1,0 +1,331 @@
+[
+  {
+    "id": "09",
+    "url": "http://209.233.22.199/IMAGE.JPG",
+    "url_site": "http://www.insecam.org/en/view/202281/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "04",
+    "url": "http://50.196.166.205:8000/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/243597/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "67",
+    "url": "http://50.250.214.213/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478714361",
+    "url_site": "http://www.insecam.org/en/view/1522/",
+    "type": "image",
+    "isZoomed": true
+  },
+  {
+    "id": "60",
+    "url": "http://128.32.197.194:8080/IMAGE.JPG",
+    "url_site": "http://www.insecam.org/en/view/200937/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "47",
+    "url": "http://50.143.164.152/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/238616/",
+    "type": "mjpg",
+    "isZoomed": true
+  },
+  {
+    "id": "62",
+    "url": "http://173.164.213.201:8090/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478744212",
+    "url_site": "http://www.insecam.org/en/view/1767/",
+    "type": "image",
+    "isZoomed": true
+  },
+  {
+    "id": "36",
+    "url": "http://50.76.36.19/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478744370",
+    "url_site": "http://www.insecam.org/en/view/260737/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "70",
+    "url": "http://108.95.165.203:80/snap.jpg?JpegSize=M&amp;JpegCam=1&amp;r=COUNTER",
+    "url_site": "http://www.insecam.org/en/view/360737/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "24",
+    "url": "http://50.250.214.216/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478744744",
+    "url_site": "http://www.insecam.org/en/view/265596/",
+    "type": "image",
+    "isZoomed": true
+  },
+  {
+    "id": "66",
+    "url": "http://50.250.214.211/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478744869",
+    "url_site": "http://www.insecam.org/en/view/261543/",
+    "type": "image",
+    "isZoomed": true
+  },
+  {
+    "id": "24",
+    "url": "http://50.250.214.216/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478744744",
+    "url_site": "http://www.insecam.org/en/view/265596/",
+    "type": "image",
+    "isZoomed": true
+  },
+  {
+    "id": "26",
+    "url": "http://50.250.214.215/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;0",
+    "url_site": "http://www.insecam.org/en/view/261474/",
+    "type": "image",
+    "isZoomed": true
+  },
+  {
+    "id": "27",
+    "url": "http://50.250.214.214/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478745056",
+    "url_site": "http://www.insecam.org/en/view/261501/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "25",
+    "url": "http://50.250.214.212/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478745220",
+    "url_site": "http://www.insecam.org/en/view/265660/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "27",
+    "url": "http://50.250.214.214/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478745056",
+    "url_site": "http://www.insecam.org/en/view/261501/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "25",
+    "url": "http://50.250.214.212/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478745220",
+    "url_site": "http://www.insecam.org/en/view/265660/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "27",
+    "url": "http://50.250.214.214/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478745056",
+    "url_site": "http://www.insecam.org/en/view/261501/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "26",
+    "url": "http://50.250.214.215/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;0",
+    "url_site": "http://www.insecam.org/en/view/261474/",
+    "type": "image",
+    "isZoomed": true
+  },
+  {
+    "id": "24",
+    "url": "http://50.250.214.216/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478744744",
+    "url_site": "http://www.insecam.org/en/view/265596/",
+    "type": "image",
+    "isZoomed": true
+  },
+  {
+    "id": "70",
+    "url": "http://108.95.165.203:80/snap.jpg?JpegSize=M&amp;JpegCam=1&amp;r=COUNTER",
+    "url_site": "http://www.insecam.org/en/view/360737/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "36",
+    "url": "http://50.76.36.19/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478744370",
+    "url_site": "http://www.insecam.org/en/view/260737/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "25",
+    "url": "http://50.250.214.212/cgi-bin/camera?resolution=720&amp;amp;quality=1&amp;amp;Language=0&amp;amp;1478745220",
+    "url_site": "http://www.insecam.org/en/view/265660/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "41",
+    "url": "http://173.167.105.57/SnapshotJPEG?Resolution=640x480&amp;amp;Quality=Clarity&amp;amp;1478831080",
+    "url_site": "http://www.insecam.org/en/view/151016/",
+    "type": "image",
+    "isZoomed": true
+  },
+  {
+    "id": "32",
+    "url": "http://73.54.220.89:8082/IMAGE.JPG",
+    "url_site": "http://www.insecam.org/en/view/225749/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "33",
+    "url": "http://73.54.220.89:8081/IMAGE.JPG",
+    "url_site": "http://www.insecam.org/en/view/221672/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "38",
+    "url": "http://70.36.196.122/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/239277/",
+    "type": "mjpg",
+    "isZoomed": true
+  },
+  {
+    "id": "13",
+    "url": "http://71.198.41.4:81/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/324681/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "61",
+    "url": "http://50.131.63.83:8081/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/337750/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "04",
+    "url": "http://50.196.166.205:8000/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/243597/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "11",
+    "url": "http://173.11.91.169:8090/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/244045/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "06",
+    "url": "http://73.72.18.119:86/IMAGE.JPG",
+    "url_site": "http://www.insecam.org/en/view/230170/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "07",
+    "url": "http://73.72.18.119:85/IMAGE.JPG",
+    "url_site": "http://www.insecam.org/en/view/230168/",
+    "type": "image",
+    "isZoomed": false
+  },
+  {
+    "id": "68",
+    "url": "http://74.95.6.193:8001/mjpg/video.mjpg?COUNTER",
+    "url_site": "http://www.insecam.org/en/view/237502/",
+    "type": "image",
+    "isZoomed": true
+  },
+  {
+    "id": "51",
+    "url": "4127",
+    "url_site": "http://www.surfline.com/surf-report/ocean-beach-sf-northern-california_4127/",
+    "type": "surfline",
+    "isZoomed": false
+  },
+  {
+    "id": "35",
+    "url": "http://75.149.45.190/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/237543/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "51",
+    "url": "4127",
+    "url_site": "http://www.surfline.com/surf-report/ocean-beach-sf-northern-california_4127/",
+    "type": "surfline",
+    "isZoomed": false
+  },
+  {
+    "id": "18",
+    "url": "http://208.106.16.91:8001/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/240175/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "51",
+    "url": "4127",
+    "url_site": "http://www.surfline.com/surf-report/ocean-beach-sf-northern-california_4127/",
+    "type": "surfline",
+    "isZoomed": false
+  },
+  {
+    "id": "50",
+    "url": "http://video3.earthcam.com/fecnetwork/6961.flv/.m3u8",
+    "url_site": "http://www.earthcam.com/usa/california/sanfrancisco/?cam=sanfranciscoskyline",
+    "type": "earthcam",
+    "isZoomed": false
+  },
+  {
+    "id": "70",
+    "url": "http://108.95.165.203:80/snap.jpg?JpegSize=M&amp;JpegCam=1&amp;r=COUNTER",
+    "url_site": "http://www.insecam.org/en/view/360737/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "41",
+    "url": "http://173.167.105.57/SnapshotJPEG?Resolution=640x480&amp;amp;Quality=Clarity&amp;amp;1478831080",
+    "url_site": "http://www.insecam.org/en/view/151016/",
+    "type": "image",
+    "isZoomed": true
+  },
+  {
+    "id": "67",
+    "url": "http://108.78.254.124:8083/cgi-bin/faststream.jpg?stream=half&amp;fps=15&amp;rand=COUNTER",
+    "url_site": "http://www.insecam.org/en/view/354533/",
+    "type": "image",
+    "isZoomed": true
+  },
+  {
+    "id": "22",
+    "url": "http://173.13.132.110:9001/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/245507/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "29",
+    "url": "http://50.251.252.137:8000/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/244848/",
+    "type": "mjpg",
+    "isZoomed": false
+  },
+  {
+    "id": "48",
+    "url": "DxY0jMJbk-8",
+    "url_site": "https://www.youtube.com/watch?v=DxY0jMJbk-8",
+    "type": "youtube",
+    "isZoomed": false
+  },
+  {
+    "id": "51",
+    "url": "4127",
+    "url_site": "http://www.surfline.com/surf-report/ocean-beach-sf-northern-california_4127/",
+    "type": "surfline",
+    "isZoomed": false
+  },
+  {
+    "id": "60",
+    "url": "http://128.32.197.194:8080/IMAGE.JPG",
+    "url_site": "http://www.insecam.org/en/view/200937/",
+    "type": "image",
+    "isZoomed": false
+  }
+]
