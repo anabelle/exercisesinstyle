@@ -287,6 +287,13 @@
     "isZoomed": false
   },
   {
+    "id": "21",
+    "url": "http://73.203.51.130:8084/mjpg/video.mjpg?COUNTER",
+    "url_site": "http://www.insecam.org/en/view/245059/",
+    "type": "mjpg",
+    "isZoomed": false
+  }, 
+  {
     "id": "29",
     "url": "http://50.251.252.137:8000/mjpg/video.mjpg",
     "url_site": "http://www.insecam.org/en/view/244848/",
