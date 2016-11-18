@@ -21,9 +21,9 @@
     "isZoomed": true
   },
   {
-    "id": "60",
-    "url": "http://128.32.197.194:8080/IMAGE.JPG",
-    "url_site": "http://www.insecam.org/en/view/200937/",
+    "id": "06",
+    "url": "http://73.72.18.119:86/IMAGE.JPG",
+    "url_site": "http://www.insecam.org/en/view/230170/",
     "type": "image",
     "isZoomed": false
   },
@@ -161,16 +161,9 @@
     "isZoomed": true
   },
   {
-    "id": "32",
-    "url": "http://73.54.220.89:8082/IMAGE.JPG",
-    "url_site": "http://www.insecam.org/en/view/225749/",
-    "type": "image",
-    "isZoomed": false
-  },
-  {
-    "id": "33",
-    "url": "http://73.54.220.89:8081/IMAGE.JPG",
-    "url_site": "http://www.insecam.org/en/view/221672/",
+    "id": "75",
+    "url": "http://73.184.53.101:83/SnapshotJPEG?Resolution=640x480&amp;amp;Quality=Clarity&amp;amp;COUNTER",
+    "url_site": "http://www.insecam.org/en/view/184531/",
     "type": "image",
     "isZoomed": false
   },
@@ -203,23 +196,16 @@
     "isZoomed": false
   },
   {
-    "id": "11",
-    "url": "http://173.11.91.169:8090/mjpg/video.mjpg",
-    "url_site": "http://www.insecam.org/en/view/244045/",
+    "id": "78",
+    "url": "http://173.164.168.246:5000/SnapshotJPEG?Resolution=640x480&amp;amp;Quality=Clarity&amp;amp;COUNTER",
+    "url_site": "http://www.insecam.org/en/view/211473/",
     "type": "mjpg",
-    "isZoomed": false
+    "isZoomed": true
   },
   {
-    "id": "06",
-    "url": "http://73.72.18.119:86/IMAGE.JPG",
-    "url_site": "http://www.insecam.org/en/view/230170/",
-    "type": "image",
-    "isZoomed": false
-  },
-  {
-    "id": "07",
-    "url": "http://73.72.18.119:85/IMAGE.JPG",
-    "url_site": "http://www.insecam.org/en/view/230168/",
+    "id": "77",
+    "url": "http://107.3.135.99:8081/cam_1.cgi",
+    "url_site": "http://www.insecam.org/en/view/360585/",
     "type": "image",
     "isZoomed": false
   },
@@ -245,10 +231,10 @@
     "isZoomed": false
   },
   {
-    "id": "51",
-    "url": "4127",
-    "url_site": "http://www.surfline.com/surf-report/ocean-beach-sf-northern-california_4127/",
-    "type": "surfline",
+    "id": "81",
+    "url": "http://63.138.85.84:80/mjpg/video.mjpg?COUNTER",
+    "url_site": "http://www.insecam.org/en/view/345103/",
+    "type": "mjpg",
     "isZoomed": false
   },
   {
@@ -322,9 +308,9 @@
     "isZoomed": false
   },
   {
-    "id": "60",
-    "url": "http://128.32.197.194:8080/IMAGE.JPG",
-    "url_site": "http://www.insecam.org/en/view/200937/",
+    "id": "06",
+    "url": "http://73.72.18.119:86/IMAGE.JPG",
+    "url_site": "http://www.insecam.org/en/view/230170/",
     "type": "image",
     "isZoomed": false
   }
