@@ -238,13 +238,6 @@
     "isZoomed": false
   },
   {
-    "id": "18",
-    "url": "http://208.106.16.91:8001/mjpg/video.mjpg",
-    "url_site": "http://www.insecam.org/en/view/240175/",
-    "type": "mjpg",
-    "isZoomed": false
-  },
-  {
     "id": "51",
     "url": "4127",
     "url_site": "http://www.surfline.com/surf-report/ocean-beach-sf-northern-california_4127/",
