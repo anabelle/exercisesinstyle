@@ -1,12 +1,5 @@
 [
   {
-    "id": "00",
-    "url": "http://weather.syconline.org:2081/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=operator&pwd=topgun&cnt",
-    "url_site": "http://sausalitoyachtclub.org/about/webcam/",
-    "type": "image",
-    "isZoomed": false
-  },
-  {
     "id": "09",
     "url": "http://209.233.22.199/IMAGE.JPG",
     "url_site": "http://www.insecam.org/en/view/202281/",
@@ -203,11 +196,11 @@
     "isZoomed": false
   },
   {
-    "id": "78",
-    "url": "http://173.164.168.246:5000/SnapshotJPEG?Resolution=640x480&amp;amp;Quality=Clarity&amp;amp;COUNTER",
-    "url_site": "http://www.insecam.org/en/view/211473/",
-    "type": "mjpg",
-    "isZoomed": true
+    "id": "85",
+    "url": "http://weather.syconline.org:2081/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=operator&pwd=topgun&cnt",
+    "url_site": "http://sausalitoyachtclub.org/about/webcam/",
+    "type": "image",
+    "isZoomed": false
   },
   {
     "id": "77",
