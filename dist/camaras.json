@@ -200,7 +200,7 @@
     "url": "http://weather.syconline.org:2081/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=operator&pwd=topgun&cnt",
     "url_site": "http://sausalitoyachtclub.org/about/webcam/",
     "type": "image",
-    "isZoomed": false
+    "isZoomed": true
   },
   {
     "id": "77",
