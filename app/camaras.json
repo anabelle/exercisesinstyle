@@ -210,9 +210,9 @@
     "isZoomed": false
   },
   {
-    "id": "68",
-    "url": "http://74.95.6.193:8001/mjpg/video.mjpg?COUNTER",
-    "url_site": "http://www.insecam.org/en/view/237502/",
+    "id": "05",
+    "url": "http://71.204.166.28:1024/img/video.mjpeg?COUNTER",
+    "url_site": "http://www.insecam.org/en/view/255869/",
     "type": "image",
     "isZoomed": true
   },
