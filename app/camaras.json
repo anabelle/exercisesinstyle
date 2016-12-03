@@ -175,6 +175,13 @@
     "isZoomed": true
   },
   {
+    "id": "13",
+    "url": "http://71.198.41.4:81/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/324681/",
+    "type": "mjpg",
+    "isZoomed": true
+  },
+  {
     "id": "61",
     "url": "http://50.131.63.83:8081/mjpg/video.mjpg",
     "url_site": "http://www.insecam.org/en/view/337750/",
@@ -203,10 +210,10 @@
     "isZoomed": false
   },
   {
-    "id": "05",
-    "url": "http://71.204.166.28:1024/img/video.mjpeg?COUNTER",
-    "url_site": "http://www.insecam.org/en/view/255869/",
-    "type": "image",
+    "id": "68",
+    "url": "http://74.95.6.193:8001/mjpg/video.mjpg",
+    "url_site": "http://www.insecam.org/en/view/237502/",
+    "type": "mjpg",
     "isZoomed": true
   },
   {
